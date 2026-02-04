@@ -8,28 +8,28 @@ import {
 import { useGeoStore } from "../../shared/store/geoStore/geo.store";
 import { GEO_CONFIG, GeoCode } from "../../shared/configs/geo";
 import { AppLanguage, languageLabels, supportedLngs } from "../../shared/i18n";
+import { useTranslation } from "react-i18next";
 
 
 export const GeoSelector: React.FC = () => {
+    const { t } = useTranslation();
+
     const { geo, language, setGeo, setLanguage } = useGeoStore();
 
-    useEffect(() => {
-        
-    }, [])
     return (
         <SelectorWrapper>
 
             <GeoControl size="small">
-                <InputLabel>Geo</InputLabel>
+                <InputLabel>{t("geo")}</InputLabel>
 
                 <Select
-                    label="Geo"
+                    label={t("geo")}
                     value={geo}
                     onChange={(e) => setGeo(e.target.value as GeoCode)}
                 >
                     {Object.values(GEO_CONFIG).map((g) => (
                         <MenuItem key={g.code} value={g.code}>
-                            {g.label}
+                            {t(g.label)}
                         </MenuItem>
                     ))}
                 </Select>
@@ -37,10 +37,10 @@ export const GeoSelector: React.FC = () => {
 
 
             <StyledFormControl size="small">
-                <InputLabel>Language</InputLabel>
+                <InputLabel>{t("language")}</InputLabel>
 
                 <Select
-                    label="Language"
+                    label={t("language")}
                     value={language}
                     onChange={(e) =>
                         setLanguage(e.target.value as AppLanguage)
