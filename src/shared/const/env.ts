@@ -1,0 +1,1 @@
+export const DEFAULT_GEO = process.env.DEFAULT_GEO
