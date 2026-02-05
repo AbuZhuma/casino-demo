@@ -1,56 +1,61 @@
 export const resources = {
   en: {
     translation: {
-      title: "Welcome to the Casino",
-      subtitle: "Play top games and enjoy the ultimate gaming experience",
       openGame: "Play Now",
-      close: "Close",
-      geo: "Region",
-      language: "Language",
+      downloadCasino: "Download Casino",
+      playAnywhere: "Play anywhere, anytime",
+      installApp: "Install App",
+      only18: "Only 18+",
+      license: "Casino is certified by the Anjouan Gaming Authority",
+      socialMedia: "Us on social media:",
     },
   },
 
   ru: {
     translation: {
-      title: "Добро пожаловать в казино",
-      subtitle: "Играйте в лучшие игры и наслаждайтесь захватывающим игровым опытом",
       openGame: "Играть",
-      close: "Закрыть",
-      geo: "Регион",
-      language: "Язык",
+      downloadCasino: "Скачать казино",
+      playAnywhere: "Играйте где угодно и когда угодно",
+      installApp: "Установить",
+      only18: "Только 18+",
+      license: "Казино сертифицировано игровой комиссией Анжуан",
+      socialMedia: "Мы в социальных сетях:",
     },
   },
 
   kk: {
     translation: {
-      title: "Казиноға қош келдіңіз",
-      subtitle: "Үздік ойындарды ойнап, ерекше ойын тәжірибесінен ләззат алыңыз",
       openGame: "Ойнау",
-      close: "Жабу",
-      geo: "Аймақ",
-      language: "Тіл",
+      downloadCasino: "Казиноны жүктеу",
+      playAnywhere: "Oйынын кез келген жерде, кез келген уақытта ойнаңыз",
+      installApp: "Қосымшаны орнату",
+      only18: "Тек 18+",
+      license: "Казино Анжуан ойын басқармасы тарапынан сертификатталған",
+      socialMedia: "Біз әлеуметтік желілерде:",
     },
   },
 
   tr: {
     translation: {
-      title: "Casinoya Hoş Geldiniz",
-      subtitle: "En iyi oyunları oynayın ve eşsiz bir oyun deneyiminin tadını çıkarın",
       openGame: "Şimdi Oyna",
-      close: "Kapat",
-      geo: "Bölge",
-      language: "Dil",
+      downloadCasino: "Casinoyu İndir",
+      playAnywhere: "Her yerde, her zaman oynayın",
+      installApp: "Uygulamayı Yükle",
+      only18: "Yalnızca 18+",
+      license: "Casino, Anjouan Oyun Otoritesi tarafından sertifikalandırılmıştır",
+      socialMedia: "Sosyal medyada biz:",
     },
   },
 
   de: {
     translation: {
-      title: "Willkommen im Casino",
-      subtitle: "Spiele die besten Games und genieße ein erstklassiges Spielerlebnis",
       openGame: "Jetzt Spielen",
-      close: "Schließen",
-      geo: "Region",
-      language: "Sprache",
+      downloadCasino: "Casino herunterladen",
+      playAnywhere: "Spiele überall und jederzeit",
+      installApp: "App installieren",
+      only18: "Nur 18+",
+      license: "Das Casino ist von der Anjouan Gaming Authority zertifiziert",
+      socialMedia: "Folge uns in den sozialen Medien:",
     },
   },
 } as const;

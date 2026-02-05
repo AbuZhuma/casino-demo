@@ -1,0 +1,192 @@
+.footer-wrapper {
+    position: relative;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 80px 40px;
+    gap: 40px;
+
+    background: linear-gradient(270deg,
+            #06225D 0%,
+            #02011F 37%,
+            #02011F 100%);
+
+    overflow: hidden;
+}
+
+
+.bet-image {
+    width: 320px;
+    object-fit: contain;
+}
+
+
+.download-card {
+    width: 390px;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 16px;
+    border: 1px dashed transparent;
+
+    background:
+        linear-gradient(#0B1220, #0B1220) padding-box,
+        linear-gradient(90deg, #7B61FF, #00D1FF) border-box;
+}
+
+.logo {
+    width: 175px;
+    margin-bottom: 24px;
+}
+
+
+.title {
+    font-weight: 800;
+    font-size: 32px;
+    margin-bottom: 6px;
+    text-align: center;
+    color: white;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 15px;
+    color: #BABABA;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+
+.install-button {
+    width: 250px;
+    height: 56px;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg, #7B61FF, #00D1FF);
+
+    border: none;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.install-button:hover {
+    filter: brightness(1.05);
+    transform: translateY(-2px);
+}
+
+.download-icon {
+    width: 36px;
+}
+
+.info-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.info-icon {
+    width: 58px;
+}
+
+.info-text {
+    font-size: 16px;
+    color: rgba(251, 251, 251, 0.7);
+    max-width: 287px;
+}
+
+.social-row {
+    display: flex;
+    gap: 8px;
+}
+
+.social-icon {
+    width: 52px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.08);
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 108px;
+}
+
+.social_block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: end;
+}
+
+.p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: right;
+    color: #BABABA;
+}
+
+
+@media (max-width: 1200px) {
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social_block {
+        align-items: center;
+    }
+    .bet-image{
+        display: none;
+    }
+    .right {
+        align-items: center;
+        gap: 80px;
+        order: 1;
+    }
+
+    .info-column {
+        order: 2;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 24px;
+    }
+    .info-row{
+        flex-direction: column;
+        align-items: center;
+        width: 287px;
+    }
+    .info-text{
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-column{
+        flex-direction: column;
+    }
+}

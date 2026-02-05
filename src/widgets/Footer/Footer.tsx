@@ -1,5 +1,7 @@
+import { useTranslation } from "react-i18next";
 import icons from "../../assets/icons";
 import { betMenImage, mainLogoImage } from "../../assets/images";
+import { LanguageSelector } from "../../features/langSelector/LanguageSelector";
 import { SOCIAL_PLATFORMS } from "../../shared/const";
 
 import {
@@ -15,56 +17,68 @@ import {
   InfoRow,
   InfoIcon,
   InfoText,
+  RightColumn,
+  SocialBlock,
+  SocialTitle,
   SocialRow,
   SocialIcon,
 } from "./Footer.styles";
 
-
 const Footer = () => {
+  const { t } = useTranslation("translation");
+
   return (
     <FooterWrapper>
-
       <BetImage src={betMenImage} />
 
       <DownloadCard>
         <Logo src={mainLogoImage} />
 
-        <Title>Download Casino</Title>
+        <Title>
+          {t("downloadCasino")}
+        </Title>
+
         <Subtitle>
-          Play Min anywhere, anytime
+          {t("playAnywhere")}
         </Subtitle>
 
         <InstallButton>
           <DownloadIcon src={icons.downloadIcon} />
-          Install App
+          {t("installApp")}
         </InstallButton>
       </DownloadCard>
 
-
       <InfoColumn>
-
         <InfoRow>
           <InfoIcon src={icons.only18Icon} />
-          <InfoText>Only 18+</InfoText>
+          <InfoText>{t("only18")}</InfoText>
         </InfoRow>
 
         <InfoRow>
           <InfoIcon src={icons.licenseIcon} />
           <InfoText>
-            Casino is certified by the Anjouan Gaming Authority
+            {t("license")}
           </InfoText>
         </InfoRow>
-
-        <SocialRow>
-          {SOCIAL_PLATFORMS.map((el) => (
-            <SocialIcon key={el.icon} src={el.icon} />
-          ))}
-        </SocialRow>
-
       </InfoColumn>
 
+      <RightColumn>
+        <LanguageSelector />
+
+        <SocialBlock>
+          <SocialTitle>
+            {t("socialMedia")}
+          </SocialTitle>
+
+          <SocialRow>
+            {SOCIAL_PLATFORMS.map((el) => (
+              <SocialIcon key={el.icon} src={el.icon} />
+            ))}
+          </SocialRow>
+        </SocialBlock>
+      </RightColumn>
     </FooterWrapper>
-  );    
+  );
 };
 
 export default Footer;

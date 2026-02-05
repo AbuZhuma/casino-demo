@@ -20,8 +20,16 @@ export const languageLabels: Record<AppLanguage, string> = {
   ru: "Русский",
 };
 
+export const languageFlags: Record<AppLanguage, string> = {
+  en: "🇬🇧",
+  de: "🇩🇪",
+  tr: "🇹🇷",
+  kk: "🇰🇿",
+  ru: "🇷🇺",
+};
+
 i18n.use(initReactI18next).init({
-  resources,
+  resources,    
   lng: "en",
   fallbackLng: "en",    
   supportedLngs: [...supportedLngs],
